@@ -1,0 +1,2 @@
+﻿import fs from 'node:fs';import crypto from 'node:crypto';
+const html=fs.readFileSync('index.html','utf8');const schema=html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1];if(!schema)throw Error('Schema ausente');const hash=crypto.createHash('sha256').update(schema).digest('base64');let headers=fs.readFileSync('public/_headers','utf8').replace(/ 'sha256-[^']+'/g,'');headers=headers.replace("script-src 'self'",`script-src 'self' 'sha256-${hash}'`);fs.writeFileSync('public/_headers',headers);

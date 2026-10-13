@@ -1,0 +1,57 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "images": []
+    }
+  ],
+  "menu": true,
+  "lightboxCaption": "3 / 6 — Folhagens que dão vida aos ambientes · Imagem ilustrativa",
+  "focusRestored": true,
+  "whatsappLinks": 13,
+  "errors": []
+}

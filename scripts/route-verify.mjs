@@ -1,0 +1,2 @@
+﻿import { chromium } from '@playwright/test';
+const browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage();await page.goto('http://127.0.0.1:5173/');const link=page.getByRole('link',{name:'Como chegar'});const url=new URL(await link.getAttribute('href'));if(url.pathname!=='/maps/dir/'||url.searchParams.get('api')!=='1'||!url.searchParams.get('destination')?.includes('Floricultura Massangana'))throw new Error('Rota inválida');console.log('Rota verificada:',url.searchParams.get('destination'));await browser.close();
